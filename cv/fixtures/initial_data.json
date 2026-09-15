@@ -1,0 +1,405 @@
+[
+{
+  "model": "cv.siteconfig",
+  "pk": 2,
+  "fields": {
+    "site_name": "Franco Barretta Irusta",
+    "meta_description": "CV de Franco B. Irusta, enfocado en Soporte IT & QA Manual",
+    "email": "franco.cantonati.99@gmail.com",
+    "phone": "0",
+    "location": "Santiago Centro, Región Metropolitana",
+    "linkedin_url": "https://www.linkedin.com/in/fb-irusta/",
+    "github_url": "https://github.com/FrancoDevp",
+    "cv_pdf": ""
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 1,
+  "fields": {
+    "company": "PRONEXO",
+    "position": "Mesa de Ayuda",
+    "date_range": "abr. 2026 - ago. 2026",
+    "description": "Brindo soporte funcional a empresas mandantes y contratistas. Asisto en la carga y gestión de documentación laboral, legal y de\r\nempresas como PF, Delloite, Aramco, Soprole, Copec, Andina, entre otras. Realizo seguimiento de incidencias, elaboración de\r\nreportes, escalamiento de errores con IT y capacitaciones sobre el uso de la plataforma Pronexo",
+    "responsibilities": "Colaboración en la identificación y documentación de errores funcionales detectados por usuarios y clientes.\r\nSeguimiento y monitoreo de incidencias.\r\nIdentificación, documentación y escalamiento de errores del sistema mediante ClickUp.\r\nUso de inteligencia artificial para optimizar procesos de documentación, análisis y gestión de casos.",
+    "tools": "ClickUp, IA, documentación, gestión de incidencias, soporte a usuarios",
+    "order": 1
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 2,
+  "fields": {
+    "company": "LIONBRIDGE / GAMETEST",
+    "position": "Game Tester (QA) - Freelance",
+    "date_range": "2024 - Freelance",
+    "description": "Como Game Tester freelance en Lionbridge/GameTest, participé en proyectos de testing de videojuegos como Gems of War y King of Meat. Realicé pruebas funcionales, exploratorias, smoke y regresión, validando funcionalidades, interfaces, mecánicas de juego y estabilidad de las distintas versiones.\r\n\r\nDurante las sesiones, identifiqué y documenté bugs detallando pasos para reproducirlos, evidencia, severidad y prioridad. También realicé retesting para verificar la corrección de los defectos reportados y validé que los cambios cumplieran con los criterios esperados.",
+    "responsibilities": "Pruebas funcionales\r\nTesting exploratorio\r\nSmoke testing\r\nRegression testing\r\nDetección y documentación de bugs\r\nPasos reproducibles\r\nSeveridad y prioridad\r\nValidación de interfaces y funcionalidades",
+    "tools": "Jira, Chrome DevTools",
+    "order": 2
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 3,
+  "fields": {
+    "company": "REA JET / AV INDUSTRIAS",
+    "position": "Auxiliar Administrativo y E-commerce",
+    "date_range": "ene. 2025 - jun. 2025",
+    "description": "Auxiliar administrativo en Rea Jet y AV Industrias. Cotizaciones en Tango, facturación, cobros y remitos. Además, Gestion y desarrollo\r\ndel e-commerce de Av Industrias en GoDaddy",
+    "responsibilities": "Gestión administrativa\r\nCotizaciones, Facturación, Cobros, Remitos\r\nGestión del e-commerce\r\nDesarrollo y mantenimiento relacionado con GoDaddy\r\nAdministración de plataforma y productos",
+    "tools": "GoDaddy, e-commerce, gestión administrativa",
+    "order": 3
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 4,
+  "fields": {
+    "company": "CONTINUUM GLOBAL SOLUTIONS",
+    "position": "Atención al cliente",
+    "date_range": "nov. 2019 - mar. 2023",
+    "description": "Atención a clientes de Claro AR, resolviendo consultas  comerciales y ocasiones técnicas sobre servicios de telefonía y internet. Gestión de tickets, seguimiento de casos. Desarrollo de habilidades de comunicación efectiva, escucha activa y resolución de reclamos en tiempo real",
+    "responsibilities": "Atención a clientes\r\nSoporte a usuarios\r\nGestión de tickets\r\nResolución de consultas\r\nExperiencia orientada al usuario",
+    "tools": "Soporte, tickets, atención al cliente",
+    "order": 5
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 5,
+  "fields": {
+    "company": "InDrive",
+    "position": "Soporte y atención al cliente",
+    "date_range": "mar. 2023 - oct. 2023",
+    "description": "Encargado de reclutamiento para la app InDrive en Argentina, Bolivia y Uruguay. Asimismo, brindábamos soporte de tecnico y de\r\ncalidad.",
+    "responsibilities": "Gestión de onboarding para nuevos usuarios de la app\r\nResolución de consultas técnicas y reclamos multicanal\r\nEnfoque en calidad de servicio, resolución y documentación de procesos.",
+    "tools": "Onboarding, atención al cliente, soporte multicanal",
+    "order": 4
+  }
+},
+{
+  "model": "cv.education",
+  "pk": 1,
+  "fields": {
+    "institution": "Instituto Superior Politécnico Córdoba",
+    "title": "Tecnicatura Superior en Desarrollo de Software",
+    "period": "mar. 2026 – En curso",
+    "details": "Actualmente estoy cursando la Tecnicatura Superior en Desarrollo de Software en el Instituto Superior Politécnico Córdoba (ISPC), una carrera de tres años orientada al desarrollo de software y a la resolución de problemáticas mediante soluciones tecnológicas. Durante mi primer año adquirí conocimientos en programación con Python, fundamentos de sistemas y organizaciones, matemática y lógica, y competencias comunicacionales. Esta formación me permitió fortalecer mis bases de programación, lógica y análisis de sistemas, además de incorporar una visión más integral del ciclo de desarrollo de software. La carrera también contempla áreas como diagnóstico y resolución de errores, la calidad del software y el soporte de soluciones tecnológicas. Actualmente continúo avanzando en la carrera con el objetivo de profundizar mis conocimientos en desarrollo de software y ampliar mi perfil dentro del área tecnológica.",
+    "order": 1
+  }
+},
+{
+  "model": "cv.education",
+  "pk": 2,
+  "fields": {
+    "institution": "Telecom / EducaciónIT",
+    "title": "Bootcamp QA Tester",
+    "period": "may. 2025 – oct. 2025",
+    "details": "Durante el Bootcamp de QA Tester aprendí los fundamentos del proceso de aseguramiento de calidad de software, desde el análisis de requerimientos hasta la ejecución, documentación y seguimiento de pruebas.\r\n\r\nTesting funcional y no funcional, smoke testing, Sanity testing, regression testing, E2E, pruebas exploratorias, caja negra y caja blanca.\r\n\r\nTambién aprendí el proceso de gestión de defectos: identificar un problema, reproducirlo, documentarlo correctamente, agregar evidencia, indicar su severidad y prioridad, realizar seguimiento y posteriormente hacer retesting para comprobar que fue solucionado.\r\n\r\nJira: gestión y seguimiento de tareas, bugs e incidencias.\r\nPostman: pruebas de APIs REST.\r\nMySQL: consultas y validación básica de información en bases de datos.\r\nChrome DevTools: inspección y análisis del comportamiento de aplicaciones web.\r\nCypress: automatización de pruebas utilizando JavaScript.\r\nSelenium: automatización de pruebas web.\r\nJMeter: introducción a pruebas de rendimiento.\r\nGit: control de versiones.",
+    "order": 2
+  }
+},
+{
+  "model": "cv.education",
+  "pk": 3,
+  "fields": {
+    "institution": "Instituto Web",
+    "title": "Testing QA Manual",
+    "period": "feb. 2025 – mar. 2025",
+    "details": "Formación específica en testing manual - introducción al mundo qa",
+    "order": 3
+  }
+},
+{
+  "model": "cv.education",
+  "pk": 4,
+  "fields": {
+    "institution": "Coderhouse",
+    "title": "Desarrollo Web Frontend",
+    "period": "sept. 2021 – may. 2022",
+    "details": "Realicé mi formación en Desarrollo Web Front-End en Coderhouse entre 2021 y 2022, dividida en tres etapas: Diseño Web, JavaScript y React. En Diseño Web aprendí a desarrollar sitios responsive utilizando HTML, CSS, Sass, Bootstrap y Git. Luego profundicé en JavaScript, trabajando con lógica de programación, funciones, arrays, objetos, DOM, eventos, formularios y desarrollo de interfaces interactivas, además de utilizar jQuery. Finalmente, en React incorporé el desarrollo basado en componentes, JSX, props, estados, eventos, consumo de APIs y organización de aplicaciones Front-End. Esta formación me permitió adquirir una base sólida en desarrollo web y trabajar en distintos proyectos personales, incluyendo sitios comerciales y aplicaciones web interactivas.",
+    "order": 4
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 1,
+  "fields": {
+    "name": "Testing funcional y no funcional",
+    "category": "qa",
+    "order": 1
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 2,
+  "fields": {
+    "name": "Testing exploratorio",
+    "category": "qa",
+    "order": 2
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 3,
+  "fields": {
+    "name": "Smoke testing",
+    "category": "qa",
+    "order": 3
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 4,
+  "fields": {
+    "name": "Regression testing",
+    "category": "qa",
+    "order": 4
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 5,
+  "fields": {
+    "name": "E2E",
+    "category": "qa",
+    "order": 5
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 6,
+  "fields": {
+    "name": "Sanity testing",
+    "category": "qa",
+    "order": 6
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 7,
+  "fields": {
+    "name": "Pruebas de APIs",
+    "category": "qa",
+    "order": 7
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 10,
+  "fields": {
+    "name": "Caja negra y Caja blanca",
+    "category": "qa",
+    "order": 10
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 12,
+  "fields": {
+    "name": "Metodologías ágiles / Scrum",
+    "category": "qa",
+    "order": 12
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 13,
+  "fields": {
+    "name": "Cypress",
+    "category": "qa",
+    "order": 13
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 14,
+  "fields": {
+    "name": "Postman",
+    "category": "qa",
+    "order": 14
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 15,
+  "fields": {
+    "name": "JMeter",
+    "category": "qa",
+    "order": 15
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 16,
+  "fields": {
+    "name": "Jira",
+    "category": "qa",
+    "order": 16
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 17,
+  "fields": {
+    "name": "MySQL",
+    "category": "qa",
+    "order": 17
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 18,
+  "fields": {
+    "name": "Chrome DevTools",
+    "category": "qa",
+    "order": 18
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 19,
+  "fields": {
+    "name": "ClickUp",
+    "category": "it",
+    "order": 1
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 20,
+  "fields": {
+    "name": "AnyDesk",
+    "category": "it",
+    "order": 2
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 21,
+  "fields": {
+    "name": "TeamViewer",
+    "category": "it",
+    "order": 3
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 23,
+  "fields": {
+    "name": "Windows",
+    "category": "it",
+    "order": 5
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 24,
+  "fields": {
+    "name": "Hardware",
+    "category": "it",
+    "order": 6
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 25,
+  "fields": {
+    "name": "Redes",
+    "category": "it",
+    "order": 7
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 26,
+  "fields": {
+    "name": "Excel",
+    "category": "it",
+    "order": 8
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 27,
+  "fields": {
+    "name": "Python",
+    "category": "development",
+    "order": 1
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 28,
+  "fields": {
+    "name": "JavaScript",
+    "category": "development",
+    "order": 2
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 29,
+  "fields": {
+    "name": "HTML",
+    "category": "development",
+    "order": 3
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 30,
+  "fields": {
+    "name": "CSS",
+    "category": "development",
+    "order": 4
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 31,
+  "fields": {
+    "name": "Git",
+    "category": "management",
+    "order": 1
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 32,
+  "fields": {
+    "name": "GitHub",
+    "category": "management",
+    "order": 2
+  }
+},
+{
+  "model": "cv.project",
+  "pk": 1,
+  "fields": {
+    "title": "Proyecto personal CV online",
+    "description": "Desarrollo de un currículum vitae digital con Django, SQLite y diseño responsivo.",
+    "technologies": "Django, SQLite, HTML, CSS, JavaScript",
+    "category": "web",
+    "image": "",
+    "github_url": "https://github.com/",
+    "demo_url": "http://127.0.0.1:8000/",
+    "order": 1
+  }
+},
+{
+  "model": "cv.project",
+  "pk": 2,
+  "fields": {
+    "title": "MoviSpace – E-commerce de celulares",
+    "description": "Proyecto desarrollado durante mi formación en Desarrollo Web Front-End en Coderhouse. Consiste en una página web orientada a la venta de celulares y accesorios, desarrollada desde cero aplicando HTML, CSS, JavaScript, Sass y Bootstrap. Trabajé en la estructura y maquetación de las diferentes páginas, diseño responsive, organización de estilos y funcionalidades interactivas mediante JavaScript y jQuery. El proyecto también me permitió incorporar buenas prácticas de organización del código y utilizar Git y GitHub para el control y publicación del proyecto.",
+    "technologies": "HTML5, CSS3, JavaScript, Sass, Bootstrap, jQuery, Git y GitHub.",
+    "category": "web",
+    "image": "",
+    "github_url": "https://github.com/FrancoDevp/MoviSpace",
+    "demo_url": "https://francodevp.github.io/MoviSpace/",
+    "order": 2
+  }
+}
+]

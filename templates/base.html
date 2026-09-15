@@ -1,0 +1,68 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="{{ site_config.meta_description|default:'CV profesional de Franco Irusta.' }}"
+    />
+    <meta
+      property="og:title"
+      content="{{ site_config.page_title|default:'Franco B. Irusta | IT Support & QA Manual' }}"
+    />
+    <meta
+      property="og:description"
+      content="{{ site_config.meta_description|default:'CV profesional de Franco Irusta.' }}"
+    />
+    <meta property="og:type" content="website" />
+    <title>Franco B. Irusta | Soporte IT & QA Manual</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="{% static 'images/favicon/222522634_5c23f889-065f-43dd-a012-0e87b13e47b8.svg' %}"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a href="#inicio" class="brand">Franco B. Irusta</a>
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-menu">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#it-support">Soporte IT</a>
+          <a href="#qa-manual">QA Manual</a>
+          <a href="#formacion">Formación</a>
+          <a href="#herramientas">Herramientas</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-label="Cambiar tema"
+          >
+            ☀️
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>{% block content %}{% endblock %}</main>
+
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

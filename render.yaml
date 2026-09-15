@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: cv-online-franco
+    runtime: python
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --no-input
+    startCommand: python manage.py migrate --noinput && python manage.py loaddata cv/fixtures/initial_data.json --verbosity 0 && gunicorn config.wsgi:application
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "cv-online-7gpz.onrender.com"
+      - key: CSRF_TRUSTED_ORIGINS
+        value: "https://cv-online-7gpz.onrender.com"

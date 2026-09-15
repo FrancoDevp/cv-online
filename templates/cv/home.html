@@ -1,0 +1,361 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section id="inicio" class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>FRANCO B. IRUSTA</h1>
+      <p class="subtitle">Soporte IT · QA Manual</p>
+      <p class="tagline">Estudiante de Desarrollo en Software</p>
+
+      <p class="hero-description">
+        Con experiencia en mesa de ayuda, soporte funcional, gestión de
+        incidencias y QA manual, con interés en seguir creciendo dentro de IT y
+        testing.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#experiencia" class="btn btn-primary">Ver experiencia</a>
+        {% comment %}
+        <a
+          href="/pdf-cv/Franco%20B.%20Irusta%20CVIT%20-%20CL.pdf"
+          class="btn btn-secondary"
+          target="_blank"
+          rel="noopener"
+          >Descargar CV IT</a
+        >
+        {% endcomment %}
+        <a
+          href="/pdf-cv/Franco%20B.%20Irusta%20CVQA%20-%20CL.pdf"
+          class="btn btn-secondary"
+          target="_blank"
+          rel="noopener"
+          >Descargar CV QA</a
+        >
+      </div>
+
+      <div class="social-links" aria-label="Redes sociales">
+        <a
+          href="{{ site_config.linkedin_url|default:'https://www.linkedin.com/in/fb-irusta/' }}"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+          >LinkedIn</a
+        >
+        <a
+          href="{{ site_config.github_url|default:'https://github.com/FrancoIrusta' }}"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          >GitHub</a
+        >
+        <a
+          href="mailto:{{ site_config.email|default:'franco.cantonati.99@gmail.com' }}"
+          aria-label="Email"
+          >Email</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre-mi" class="section">
+  <div class="container">
+    <header class="section-header">
+      <p class="eyebrow">Sobre mí</p>
+      <h2>Perfil profesional</h2>
+    </header>
+
+    <div class="about-grid">
+      <p>
+        Tengo experiencia en atención al cliente, soporte técnico y soporte
+        funcional, con foco en la gestión de incidencias, documentación,
+        seguimiento y resolución de consultas. He trabajado con usuarios,
+        empresas mandantes y contratistas, gestionando tickets, reportes,
+        escalamiento de errores y capacitación de usuarios.
+      </p>
+      <p>
+        Además, desarrollé experiencia en QA manual, realizando pruebas
+        funcionales, pruebas exploratorias, smoke testing, regression testing y
+        documentación de bugs. Actualmente estoy fortaleciendo mi formación en
+        Desarrollo de Software y busco seguir creciendo dentro de IT y QA.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia" class="section">
+  <div class="container">
+    <header class="section-header">
+      <p class="eyebrow">Experiencia</p>
+      <h2>Trayectoria profesional</h2>
+    </header>
+
+    <div class="timeline">
+      {% for experience in experiences %}
+      <article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">{{ experience.date_range }}</p>
+          <h3>{{ experience.position }}</h3>
+          <h4>{{ experience.company }}</h4>
+          {% if experience.description %}
+          <p>{{ experience.description }}</p>
+          {% endif %}
+          <ul>
+            {% for responsibility in experience.responsibilities.splitlines %}
+            {% if responsibility %}
+            <li>{{ responsibility }}</li>
+            {% endif %} {% endfor %}
+          </ul>
+          {% if experience.tools %}
+          <p class="tag-list"><span>{{ experience.tools }}</span></p>
+          {% endif %}
+        </div>
+      </article>
+      {% empty %}
+      <p>No hay experiencias cargadas aún.</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="it-support" class="section">
+  <div class="container">
+    <header class="section-header">
+      <p class="eyebrow">IT Support</p>
+      <h2>Soporte funcional y técnico</h2>
+    </header>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <h3>Soporte funcional</h3>
+        <ul>
+          <li>Gestión de tickets y seguimiento de incidencias.</li>
+          <li>Escalamiento con equipos técnicos.</li>
+          <li>Documentación de errores y procedimientos.</li>
+          <li>Capacitación de usuarios.</li>
+          <li>Atención a mandantes y contratistas.</li>
+        </ul>
+      </article>
+
+      <article class="feature-card">
+        <h3>Soporte técnico</h3>
+        <ul>
+          <li>Diagnóstico de problemas y resolución.</li>
+          <li>Uso de sistemas operativos y hardware.</li>
+          <li>Gestión básica de redes e incidencias.</li>
+          <li>Configuración y troubleshooting.</li>
+        </ul>
+      </article>
+
+      <article class="feature-card">
+        <h3>Herramientas</h3>
+        <ul>
+          <li>ClickUp</li>
+          <li>AnyDesk</li>
+          <li>TeamViewer</li>
+          <li>Git</li>
+          <li>Excel / gestión de documentación</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="qa-manual" class="section">
+  <div class="container">
+    <header class="section-header">
+      <p class="eyebrow">QA Manual</p>
+      <h2>Testing y validación</h2>
+    </header>
+
+    <div class="qa-grid">
+      <div class="tag-group">
+        <span>Testing funcional</span>
+        <span>Testing exploratorio</span>
+        <span>Smoke testing</span>
+        <span>Regression testing</span>
+        <span>E2E</span>
+        <span>Sanity testing</span>
+        <span>Pruebas de APIs REST</span>
+        <span>Bug reporting</span>
+        <span>Retesting</span>
+        <span>Pruebas positivas y negativas</span>
+        <span>Documentación de pruebas</span>
+        <span>Caja negra</span>
+        <span>Caja blanca</span>
+        <span>Metodologías ágiles / Scrum</span>
+      </div>
+
+      <article class="feature-card">
+        <h3>Herramientas</h3>
+        <ul>
+          <li>Cypress</li>
+          <li>Postman</li>
+          <li>JMeter</li>
+          <li>Jira</li>
+          <li>MySQL</li>
+          <li>Chrome DevTools</li>
+          <li>Git</li>
+          <li>ClickUp</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="formacion" class="section">
+  <div class="container">
+    <header class="section-header">
+      <p class="eyebrow">Formación</p>
+      <h2>Estudios y formación</h2>
+    </header>
+
+    <div class="timeline">
+      {% for item in education %}
+      <article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">{{ item.period }}</p>
+          <h3>{{ item.title }}</h3>
+          <h4>{{ item.institution }}</h4>
+          {% if item.details %}
+          <p>{{ item.details }}</p>
+          {% endif %}
+        </div>
+      </article>
+      {% empty %}
+      <p>No hay formación cargada aún.</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="herramientas" class="section">
+  <div class="container">
+    <header class="section-header">
+      <p class="eyebrow">Herramientas</p>
+      <h2>Stack y herramientas</h2>
+    </header>
+
+    <div class="tool-groups">
+      <article class="tool-card">
+        <h3>QA / Testing</h3>
+        <ul>
+          {% for skill in skills.qa %}
+          <li>{{ skill.name }}</li>
+          {% empty %}
+          <li>No hay skills cargados.</li>
+          {% endfor %}
+        </ul>
+      </article>
+
+      <article class="tool-card">
+        <h3>Desarrollo</h3>
+        <ul>
+          {% for skill in skills.development %}
+          <li>{{ skill.name }}</li>
+          {% empty %}
+          <li>No hay skills cargados.</li>
+          {% endfor %}
+        </ul>
+      </article>
+
+      <article class="tool-card">
+        <h3>IT / Soporte</h3>
+        <ul>
+          {% for skill in skills.it %}
+          <li>{{ skill.name }}</li>
+          {% empty %}
+          <li>No hay skills cargados.</li>
+          {% endfor %}
+        </ul>
+      </article>
+
+      <article class="tool-card">
+        <h3>Gestión / Versionado</h3>
+        <ul>
+          {% for skill in skills.management %}
+          <li>{{ skill.name }}</li>
+          {% empty %}
+          <li>No hay skills cargados.</li>
+          {% endfor %}
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos" class="section">
+  <div class="container">
+    <header class="section-header">
+      <p class="eyebrow">Proyectos</p>
+      <h2>Trabajos y proyectos</h2>
+    </header>
+
+    <div class="projects-grid">
+      {% for project in projects %}
+      <article class="project-card">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <p class="project-tech">{{ project.technologies }}</p>
+        <div class="project-links">
+          {% if project.github_url %}
+          <a href="{{ project.github_url }}" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+          {% endif %} {% if project.demo_url %}
+          <a href="{{ project.demo_url }}" target="_blank" rel="noopener"
+            >Demo</a
+          >
+          {% endif %}
+        </div>
+      </article>
+      {% empty %}
+      <p>No hay proyectos cargados aún.</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="section">
+  <div class="container">
+    <header class="section-header">
+      <p class="eyebrow">Contacto</p>
+      <h2>Hablemos</h2>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <p>
+          <strong>Email:</strong>
+          <a
+            href="mailto:{{ site_config.email|default:'franco.cantonati.99@gmail.com' }}"
+            >{{ site_config.email|default:'franco.cantonati.99@gmail.com' }}</a
+          >
+        </p>
+        <p>
+          <strong>Ubicación:</strong>
+          Santiago Centro, Región Metropolitana
+        </p>
+      </div>
+
+      <div class="contact-actions">
+        <a
+          href="{{ site_config.linkedin_url|default:'https://www.linkedin.com/in/fb-irusta/' }}"
+          class="btn btn-secondary"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+        <a
+          href="{{ site_config.github_url|default:'https://github.com/FrancoIrusta' }}"
+          class="btn btn-secondary"
+          target="_blank"
+          rel="noopener"
+          >GitHub</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
